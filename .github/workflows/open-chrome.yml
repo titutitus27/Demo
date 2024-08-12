@@ -12,5 +12,5 @@ jobs:
 
       - name: Run Batch File
         run: |
-          start C:\Program Files\Google\Chrome\Application\chrome.exe
+          start "C:\Program Files\Google\Chrome\Application\chrome.exe" "www.google.com"
         shell: cmd
