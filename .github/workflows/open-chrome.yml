@@ -12,5 +12,5 @@ jobs:
 
       - name: Run Batch File
         run: |
-          start "C:\XTras\MBA-Timetable"
+          start "" "C:\XTras\MBA-Timetable.pdf"
         shell: cmd
