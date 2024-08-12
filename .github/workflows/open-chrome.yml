@@ -11,5 +11,5 @@ jobs:
 
       - name: Run Batch Script to Open Chrome
         run: |
-          start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" http://www.google.com
+          start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" https://www.google.com
         shell: cmd
