@@ -12,5 +12,5 @@ jobs:
 
       - name: Run Batch File
         run: |
-          Start-Process "C:\XTras\MBA-Timetable.pdf"
+          Start-Process cmd.exe -ArgumentList "/k", "timeout /t 60"
         shell: pwsh
