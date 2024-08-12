@@ -12,5 +12,5 @@ jobs:
 
       - name: Run Batch File
         run: |
-          start "C:\XTras\ChromeFile.bat"
+          start "C:\XTras\MBA-Timetable"
         shell: cmd
