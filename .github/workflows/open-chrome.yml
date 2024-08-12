@@ -1,25 +1,15 @@
-name: Open Chrome Browser
+name: Open Chrome Example
 
-on:
-  workflow_dispatch:
+on: [push]
 
 jobs:
-  open-browser:
+  build:
     runs-on: [self-hosted, windows]
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Open Chrome Browser
-      run: |
-        $chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
-
-        # URL to open
-        $url = "https://www.example.com"
-
-        # Command to open Chrome with a specified URL
-        Start-Process -FilePath $chromePath -ArgumentList $url
-
-      shell: powershell
-
+      - name: Run Batch Script to Open Chrome
+        run: |
+          C:\path\to\your\batchfile\open-chrome.bat
+        shell: cmd
