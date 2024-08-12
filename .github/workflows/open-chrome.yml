@@ -12,5 +12,4 @@ jobs:
 
       - name: Run Batch File
         run: |
-          Start-Process cmd.exe -ArgumentList "/k", "timeout /t 60"
-        shell: pwsh
+          powershell.exe -NoExit -Command "Start-Sleep -Seconds 60"
