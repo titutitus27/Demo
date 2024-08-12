@@ -12,4 +12,5 @@ jobs:
       - name: Run Batch Script to Open Chrome
         run: |
           start chrome "https://www.google.com"
+          start chrome "https://www.google.com"
         shell: cmd
