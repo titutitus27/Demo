@@ -12,5 +12,6 @@ jobs:
 
       - name: Run Batch File
         run: |
-          start "" "C:\XTras\MBA-Timetable.pdf"
-        shell: cmd
+          $pdfPath = "C:\XTras\MBA-Timetable.pdf"
+          Start-Process $pdfPath
+        shell: pwsh
