@@ -11,5 +11,5 @@ jobs:
 
       - name: Run Batch Script to Open Chrome
         run: |
-          C:\Xtras\Alexa.bat
+          C:\Xtras\ChromeFile.bat
         shell: cmd
