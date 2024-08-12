@@ -11,7 +11,19 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Run Batch Script to Open Chrome
+    - name: Open Chrome Browser
       run: |
-        C:\Xtras\Alexa.bat
+        # Temporarily bypass the execution policy for this script
+        Set-ExecutionPolicy Bypass -Scope Process -Force
+        
+        # Path to Chrome executable
+        $chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
+
+        # URL to open
+        $url = "https://www.example.com"
+
+        # Command to open Chrome with a specified URL
+        Start-Process -FilePath $chromePath -ArgumentList $url
+
+      shell: powershell
 
