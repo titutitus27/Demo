@@ -12,5 +12,5 @@ jobs:
 
       - name: Run Batch File
         run: |
-          C:\XTras\Alexa.bat
+          start C:\Program Files\Google\Chrome\Application\chrome.exe
         shell: cmd
