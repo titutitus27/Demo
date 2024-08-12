@@ -11,5 +11,5 @@ jobs:
 
       - name: Run Batch Script to Open Chrome
         run: |
-          C:\Xtras\ChromeFile.bat
+          start chrome "https://www.google.com"
         shell: cmd
